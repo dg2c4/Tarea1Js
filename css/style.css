@@ -1,0 +1,342 @@
+/*CSS responsive desing*/
+/* 🔹 Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 🔹 Imagen de fondo con opacidad */
+  .background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/image.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; /* Ajusta la opacidad aquí (0.0 - 1.0) */
+    z-index: -1;
+  }
+  
+  /* 🔹 Contenedor principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* 🔹 Navegación */
+  .navbar {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  /* 🔹 Botones */
+  button, .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  button:hover, .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Lista de enlaces convertida en botones */
+  .nav.flex-column .nav-link {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  
+  .nav.flex-column .nav-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 🔹 Área de texto y subida de archivos */
+  textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0056b3(255, 255, 255, 0.9);
+  }
+  
+  /* 🔹 Contenedor de contenido */
+  .card {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #0056b3(255, 255, 255, 0.8);
+  }
+  
+  /* 🔹 Diseño responsivo */
+  @media (max-width: 992px) {
+    /* Ajustes para tabletas */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .col-8, .col-14 {
+        width: 100%;
+        text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Ajustes para celulares */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .nav.flex-column {
+        flex-direction: row;
+        justify-content: center;
+    }
+  
+    .nav.flex-column .nav-item {
+        margin: 5px;
+    }
+  
+    .nav.flex-column .nav-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+  
+    button, .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+  
+    textarea {
+        font-size: 14px;
+    }
+  }
+  
+  /* 🔹 Contenedor de los botones centrado */
+  .d-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente si es necesario */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
+  }
+  
+  /* 🔹 Botones con menor ancho */
+  button {
+    width: 150px; /* Reducir el ancho */
+    text-align: center;
+    background-color: #00ff00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  /* 🔹 Efecto hover */
+  button:hover {
+    background-color: #008000; /* Verde más oscuro */
+  }
+  
+  /* 🔹 Aplicar la imagen de fondo */
+  body {
+    background-image: url('ruta/de/tu/imagen.png'); /* Reemplaza con la ruta correcta */
+    background-size: cover; /* Ajustar la imagen al tamaño de la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-attachment: fixed; /* Mantener la imagen fija al hacer scroll */
+  }
+  
+  /* 🔹 Cambiar el fondo del contenido transparente */
+  .container-fluid, .d-grid, .col-14 {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+  }
+  
+  /* 🔹 Cambiar color del texto para mayor visibilidad */
+  body, p, label, input, textarea {
+    color: #00ff00; /* Verde fluorescente */
+  }
+  
+  /* 🔹 Botones con transparencia */
+  button {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    color: white;
+    border: 1px solid #00ff00; /* Borde verde fluorescente */
+  }
+  
+  
+  /* 🔹 Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 🔹 Fondo negro en toda la página */
+  body {
+    background-color: #000; /* Negro */
+    color: #00ff00; /* Verde fluorescente oscuro */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 🔹 Estilo del área de texto */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background: url('../img/image.png') no-repeat center center; /* Imagen de fondo */
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #000; /* Verde fluorescente oscuro */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  /* 🔹 Ajustar la opacidad del fondo */
+  textarea {
+    --bg-opacity: 0.5; /* Ajusta la opacidad entre 0 y 1 */
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+  }
+  
+  /* 🔹 Cambiar el color del placeholder */
+  textarea::placeholder {
+    color: #0056b3(0, 255, 0, 0.5); /* Verde más claro */
+  }
+  
+  /* 🔹 Botones con estilo verde fluorescente */
+  button {
+    background-color: #0056b3;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  /* 🔹 Efecto hover */
+  button:hover {
+    background-color: #0056b3; /* Verde más oscuro */
+  }
+  
+  /* 🔹 Ajuste responsivo */
+  @media (max-width: 768px) {
+    textarea {
+        font-size: 14px;
+    }
+  }
+  
+  /* 🔹 Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 🔹 Permitir modificar la opacidad */
+  textarea::placeholder {
+    color: #0056b3(0, 255, 0, 0.7); /* Verde más claro para el placeholder */
+  }
+  
+  /* 🔹 Ajustar la opacidad con variable */
+  textarea {
+    --bg-opacity: 0.5; /* Ajusta la opacidad entre 0 y 1 */
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+  }
+  
+  /* 🔹 Estilo del input de archivos */
+  input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #0056b3;
+  }
+  
+  /* 🔹 Ajuste responsivo */
+  @media (max-width: 768px) {
+    textarea {
+        font-size: 14px;
+    }
+  }
+  
+  
+  /* Fondo con imagen y opacidad */
+  .background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img\Обои.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; /* Ajusta la opacidad aquí (0.0 - 1.0) */
+    z-index: -1;
+  }
+  
+  /* Asegurar que textarea y input file NO tengan el fondo opaco */
+  textarea, input[type="file"] {
+    position: relative;
+    background-color: rgba(#000, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    z-index: 1;
+  }
+  
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Ajusta la opacidad aquí */
+    z-index: -1;
+  }
+  
+  /* Asegurar que textarea y input file NO tengan el fondo opaco */
+  textarea,
+  input[type="file"] {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fondo blanco con ligera transparencia */
+    z-index: 1;
+  }
+  
+  /* Convertir la lista en botones */
+  .nav.flex-column .nav-item .nav-link {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .nav.flex-column .nav-item .nav-link:hover {
+    background-color: #0056b3;
+  }
+  
+  

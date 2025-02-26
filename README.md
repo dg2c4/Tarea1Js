@@ -19,7 +19,7 @@ Poner en práctica el uso del lenguaje JavaScript por medio del desarrollo de un
 | User: | David Gutierrez Chaves |
 |------|--------|
 | Code: | 506222728 |
-| Subject: | Nuevas Tecnologias |
+| Subject: | Desarrollo Nuevas Tecnologias |
 | Institution: | Fundación Universitaria Konrad Lorenz |
 | Institutional email | david.gutierrec@konradlorenz.edu.co |  
 

@@ -4,7 +4,7 @@
 </p>
 
 # *Link Del Trabajo Realizado:*
-    https://dg2c4.github.io/Tarea1Js/
+    https://dg2c4.github.io/Work-1-HTML-CSS-JAVASCRIPT/
 
 # *Objetivo:*
     Poner en práctica el uso del lenguaje JavaScript por medio del desarrollo de un generador de contenidos aplicando los conceptos de la introducción a HTML, CSS, JavaScript.

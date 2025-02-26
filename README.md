@@ -1,4 +1,4 @@
-# *Tarea #1 HTML-CSS-JAVASCRIPT*
+# *Work-1-HTML-CSS-JAVASCRIP*
 <p align="center">
   <img width="600" height="450" src="Assets/HTML-CSS-JAVASCRIPT.jpg" alt="HTML-CSS-JAVASCRIPT">
 </p>

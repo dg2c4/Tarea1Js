@@ -7,7 +7,7 @@
     https://dg2c4.github.io/Work-1-HTML-CSS-JAVASCRIPT/
 
 # *Objetivo:*
-    Poner en práctica el uso del lenguaje JavaScript por medio del desarrollo de un generador de contenidos aplicando los conceptos de la introducción a HTML, CSS, JavaScript.
+Poner en práctica el uso del lenguaje JavaScript por medio del desarrollo de un generador de contenidos aplicando los conceptos de la introducción a HTML, CSS, JavaScript.
 
 # *Actividad de Aprendizaje:*
     A. Crear la función para nuevo título utilizando aluna de las etiquetas de título (Ej. <h1>Texto</h1>). La función (método) la debe crear en el archivo contenido.js.
